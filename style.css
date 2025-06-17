@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+}
+
+header .logo img {
+    width: 200px;
+    height: auto;
+}
+
+nav ul.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav ul.nav-links li a:hover {
+    background-color: #0059b3;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Image Row */
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    align-items: flex-start;
+}
+
+.image-row img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 300px;
+}
+
+.image-row .note {
+    flex: 1 1 300px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 70px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    width: 350px;
+    height: 350px;
+}
+
+/* Admissions */
+.admissions-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admissions-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.admissions-info, .admissions-process {
+    flex: 1 1 300px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Contact */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-info, .contact-form {
+    flex: 1 1 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color: #0059b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    margin-top: 40px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul.nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-top: 10px;
+    }
+}
